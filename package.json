@@ -1,22 +1,19 @@
 {
-  "name": "TiddlyWiki",
-  "version": "5.1.12-prerelease",
+  "name": "tiddlywiki",
+  "preferGlobal": "true",
+  "version": "5.1.14-prerelease",
   "author": "Jeremy Ruston <jeremy@jermolene.com>",
-  "description": "A non-linear personal web notebook.",
-  "icon-path": "icon.svg",
+  "description": "a non-linear personal web notebook",
   "contributors": [
     {
       "name": "Jeremy Ruston",
       "email": "jeremy@jermolene.com"
     }
   ],
-  "scripts": {
-    "start": "node server.js"
-  },
   "bin": {
-    "tiddlywiki": "./server.js"
+    "tiddlywiki": "./tiddlywiki.js"
   },
-  "main": "./server.js",
+  "main": "./boot/boot.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/Jermolene/TiddlyWiki5.git"
@@ -26,18 +23,10 @@
     "tiddlywiki5",
     "wiki"
   ],
-  "dependencies": {
-    "cozydb": "^0.1.10",
-    "cpr": "1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "bundleDependencies": [],
-  "cozy-permissions": {
-    "CozyInstance": {
-      "description": "Used to recover your your cozy's domain."
-    }
-  },
-  "license": "MIT",
+  "license": "BSD",
   "engines": {
     "node": ">=0.8.2"
   }
